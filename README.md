@@ -1,4 +1,4 @@
-# LoL API Project - Date Late 2014
+# LoL API Project - Developed Late 2014
 Experimental Project using League of legends API. The API is a REST service which you can access using a Key token with only one drawback. The key can only do 10 request every minute.
 
 # Project Summary
