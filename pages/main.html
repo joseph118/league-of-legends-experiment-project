@@ -1,0 +1,89 @@
+<div id="mainContainer">
+    <div id="subContainer">
+        <div id="mainChoice">
+            <input type="submit" id="sltSign" class="upperBtn" value="Login" />
+            <input type="submit" id="sltReg" class="upperBtn" value="Register" />
+        </div>
+        <div id="login">
+            <form id="frmLogin" method="POST" action="./php/login.php">
+                <table id="lgnTable">
+                    <tr>
+                        <td>Username </td>
+                        <td><input type="text" name="lUser" id="logUser" class="mainInput" required /></td>
+                    </tr>
+                    <tr>
+                        <td>Password </td>
+                        <td><input type="password" name="lPass" id="logPass" class="mainInput" required /></td>
+                    </tr>
+                </table>
+                <div class="btnCover">
+                    <input type="submit" id="lgnBTN" class="mainBtn" value="Login" />
+                </div>
+            </form>
+        </div>
+        <div id="register">
+            <form id="frmReg" method="POST" action="./php/register.php">
+                <table id="sgnTable">
+                    <tr>
+                        <td>Username </td>
+                        <td><input type="text" name="sUser" id="signUser" class="mainInput" required /></td>
+                    </tr>
+                    <tr>
+                        <td>Name </td>
+                        <td><input type="text" name="sName" id="signName" class="mainInput" required /></td>
+                    </tr>
+                    <tr>
+                        <td>Surname </td>
+                        <td><input type="text" name ="sSurname" id="signSurname" class="mainInput" required /></td>
+                    </tr>
+                    <tr>
+                        <td>Password </td>
+                        <td><input type="password" name="sPassword" id="signPassword" class="mainInput" required onchange="form.signRPassword.pattern = this.value;" /></td>
+                    </tr>
+                    <tr>
+                        <td>Re-Type Password </td>
+                        <td><input type="password" id="signRPassword" class="mainInput" required /></td>
+                    </tr>
+                    <tr>
+                        <td>Summoner Name </td>
+                        <td><input type="text" id="sSummonerName" name="sSummonerName" class="mainInput" required /></td>
+                    </tr>
+                    <tr>
+                        <td>Looking For Team? </td>
+                        <td style="padding-top: 5px; text-align: center;"> Yes <input type="checkbox" id="cy" name="y" /> </td>
+                    </tr>
+                    <tr id="lft" style="display: none;">
+                        <th style="vertical-align: top; padding-top: 8px;">Select Your Lane: </th>
+                        <td>
+                            <table style="text-align: right; width: 100%; padding-top: 8px;">
+                                <tr>
+                                    <td>Top Lane <input type="checkbox" name="tl" /> </td>
+                                </tr>
+                                <tr>
+                                    <td>Middle Lane <input type="checkbox" name="ml" /> </td>
+                                </tr>
+                                <tr>
+                                    <td>Support <input type="checkbox" name="s" /> </td>
+                                </tr>
+                                <tr>
+                                    <td>Marksman <input type="checkbox" name="m" /> </td>
+                                </tr>
+                                <tr>
+                                    <td>Jungle <input type="checkbox" name="j" /> </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <div class="btnCover">
+                    <input type="submit" id="signBTN" class="mainBtn" value="Register" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="blanket"></div>
+    <div id="msgMid"></div>
+    <div id="copyright">
+        <p style="width: 250px; font-size: 13px;">Designed & Developed By: <a style="font-size: 14px;" href="https://www.linkedin.com/pub/joseph-borg/50/64b/353"> Joseph Borg </a></p>
+    </div>
+</div>
